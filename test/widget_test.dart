@@ -17,5 +17,7 @@ void main() {
 
     await tester.pumpWidget(DatingApp(userRepository: userRepository));
     expect(find.byType(DatingApp), findsOneWidget);
+    await tester.pump(const Duration(milliseconds: 2500));
+    await tester.pump(const Duration(milliseconds: 500));
   });
 }

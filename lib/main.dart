@@ -7,6 +7,7 @@ import 'data/repositories/user_repository_impl.dart';
 import 'presentation/bloc/home_bloc.dart';
 import 'presentation/bloc/home_event.dart';
 import 'presentation/pages/main_navigation_page.dart';
+import 'presentation/pages/splash/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -44,7 +45,7 @@ class DatingApp extends StatelessWidget {
           title: 'Dating App',
           debugShowCheckedModeBanner: false,
           theme: AppTheme.lightTheme,
-          home: const MainNavigationPage(),
+          home: const SplashScreen(),
         ),
       ),
     );
